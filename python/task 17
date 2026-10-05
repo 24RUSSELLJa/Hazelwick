@@ -1,0 +1,5 @@
+total_minutes = int(input("Enter a time in minutes: "))
+hours = total_minutes // 60
+minutes = total_minutes % 60
+
+print(str(hours) + " hours and " + str(minutes) + " minutes")
