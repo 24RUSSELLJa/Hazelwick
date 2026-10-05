@@ -1,0 +1,38 @@
+score = 0
+
+answer = int(input("What is 20 divided by 4? "))
+if answer == 5:
+	print("Right")
+	score += 1
+else:
+	print("Wrong")
+
+answer = int(input("What is 9 minus 3? "))
+if answer == 6:
+	print("Right")
+	score += 1
+else:
+	print("Wrong")
+
+answer = int(input("What is 7 plus 8? "))
+if answer == 15:
+	print("Right")
+	score += 1
+else:
+	print("Wrong")
+
+answer = int(input("What is 6 multiplied by 4? "))
+if answer == 24:
+	print("Right")
+	score += 1
+else:
+	print("Wrong")
+
+answer = int(input("What is 18 divided by 3? "))
+if answer == 6:
+	print("Right")
+	score += 1
+else:
+	print("Wrong")
+
+print("Your score is " + str(score) + "/5")
