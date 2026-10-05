@@ -1,0 +1,17 @@
+first_pig = input("Enter the first user's name (first pig): ")
+second_pig = input("Enter the second user's name (second pig): ")
+third_pig = input("Enter the third user's name (third pig): ")
+wolf = input("Enter the fourth user's name (wolf): ")
+
+first_material = input("Enter the first house material: ")
+second_material = input("Enter the second house material: ")
+third_material = input("Enter the third house material: ")
+
+print("Once upon a time, " + first_pig + ", " + second_pig + " and " + third_pig + " built houses.")
+print(first_pig + " built a house from " + first_material + ".")
+print(second_pig + " built a house from " + second_material + ".")
+print(third_pig + " built a house from " + third_material + ".")
+print("One day, " + wolf + " came along and huffed and puffed until the first two houses fell down.")
+print(first_pig + " and " + second_pig + " hurried to the house made from " + third_material + ".")
+print(wolf + " huffed and puffed, but the third house stood firm.")
+print("The pigs lived happily ever after.")

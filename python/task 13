@@ -1,0 +1,4 @@
+age_years = int(input("Enter your age in years: "))
+age_months = age_years * 12
+
+print("You are " + str(age_months) + " months old.")

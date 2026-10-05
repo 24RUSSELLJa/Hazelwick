@@ -1,0 +1,8 @@
+big_number = float(input("Enter the bigger number: "))
+small_number = float(input("Enter the smaller number: "))
+
+times = big_number // small_number
+remainder = big_number % small_number
+
+print("The smaller number fits into the bigger number " + str(times) + " times, with a remainder of " + str(remainder))
+

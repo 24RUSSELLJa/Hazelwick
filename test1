@@ -1,0 +1,66 @@
+# Python
+import random
+
+# Define possible moves
+moves = ["rock", "paper", "scissors"]
+
+# Initialize scores
+user_score = 0
+computer_score = 0
+
+# Number of rounds
+rounds = int(input("How many rounds do you want to play? "))
+
+for i in range(1, rounds + 1):
+    print(f"Round {i}")
+    
+    # Get user's choice
+    user_choice = input("Enter your move (rock, paper, scissors): ").lower()
+    
+    # Check if the user entered a valid move
+    if user_choice not in moves:
+        print("Invalid choice! Please choose rock, paper, or scissors.")
+        continue  # Skip this round
+    
+    # Computer randomly chooses a move
+    computer_choice = random.choice(moves)
+    
+    print(f"You chose {user_choice}, computer chose {computer_choice}.")
+    
+    # Compare user and computer choices and update scores
+    if user_choice == computer_choice:
+        print("It's a tie!")
+    elif user_choice == "rock":
+        if computer_choice == "scissors":
+            print("You win! Rock crushes scissors.")
+            user_score += 1
+        else:  # computer_choice == "paper"
+            print("You lose! Paper covers rock.")
+            computer_score += 1
+    elif user_choice == "paper":
+        if computer_choice == "rock":
+            print("You win! Paper covers rock.")
+            user_score += 1
+        else:  # computer_choice == "scissors"
+            print("You lose! Scissors cut paper.")
+            computer_score += 1
+    elif user_choice == "scissors":
+        if computer_choice == "paper":
+            print("You win! Scissors cut paper.")
+            user_score += 1
+        else:  # computer_choice == "rock"
+            print("You lose! Rock crushes scissors.")
+            computer_score += 1
+
+# Display final scores
+print("Game Over!")
+print(f"Your score: {user_score}")
+print(f"Computer score: {computer_score}")
+
+# Determine winner
+if user_score > computer_score:
+    print("Congratulations! You are the overall winner!")
+elif computer_score > user_score:
+    print("Computer wins overall! Better luck next time.")
+else:
+    print("It's a tie overall!")

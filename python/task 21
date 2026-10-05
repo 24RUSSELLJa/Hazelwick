@@ -1,0 +1,5 @@
+name=input("enter your name: ")
+if name == "jamie":
+  print("you are jamie!")
+else:
+  print("you are not jamie!")
