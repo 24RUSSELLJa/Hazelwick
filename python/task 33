@@ -1,0 +1,22 @@
+import random
+
+score = 0
+
+for round_number in range(1, 6):
+    number = random.randint(0, 100)
+    guess = int(input(f"Round {round_number}: Guess a number from 0 to 100: "))
+    difference = abs(guess - number)
+
+    if difference == 0:
+        print("Bang-on!")
+        score += 10
+    elif difference <= 5:
+        print("Close!")
+        score += 5
+    elif difference <= 10:
+        print("Okay.")
+        score += 2
+    else:
+        print("Way off.")
+
+print(f"Your final score is {score}.")
