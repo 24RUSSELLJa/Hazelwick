@@ -1,0 +1,19 @@
+allowed_count = 0
+
+while allowed_count < 8:
+    height = int(input("Enter the rider's height in cm: "))
+
+    if height >= 140:
+        allowed = True
+    elif height >= 120 and input("Are they riding with an adult? (yes/no): ") == "yes":
+        allowed = True
+    else:
+        allowed = False
+
+    if allowed:
+        print("Allowed to ride")
+        allowed_count += 1
+    else:
+        print("Not allowed to ride")
+
+print("8 riders have been allowed to ride.")

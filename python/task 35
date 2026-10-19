@@ -1,0 +1,7 @@
+total = 0
+
+while total < 100:
+    number = int(input("Enter a number: "))
+    total += number
+
+print("Final total: " + str(total))
