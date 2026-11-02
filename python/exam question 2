@@ -1,0 +1,14 @@
+hours = float(input("Enter the number of hours parked (0 to stop): "))
+
+while hours != 0:
+	electric = input("Is the car electric? (yes/no): ").lower() == "yes"
+
+	if electric:
+		price_per_hour = 2
+	else:
+		price_per_hour = 4
+
+	total_price = hours * price_per_hour
+	print("Total price in pounds:", total_price)
+
+	hours = float(input("Enter the number of hours parked (0 to stop): "))

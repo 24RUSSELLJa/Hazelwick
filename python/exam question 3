@@ -1,0 +1,24 @@
+candidate_a_votes = 0
+candidate_b_votes = 0
+candidate_c_votes = 0
+
+vote = input("Enter your vote (A, B or C), or END to finish: ").upper()
+
+while vote != "END":
+	if vote == "A":
+		candidate_a_votes += 1
+	elif vote == "B":
+		candidate_b_votes += 1
+	elif vote == "C":
+		candidate_c_votes += 1
+	else:
+		print("Please enter A, B or C.")
+
+	vote = input("Enter your vote (A, B or C), or END to finish: ").upper()
+
+total_votes = candidate_a_votes + candidate_b_votes + candidate_c_votes
+
+print("Votes for candidate A:", candidate_a_votes)
+print("Votes for candidate B:", candidate_b_votes)
+print("Votes for candidate C:", candidate_c_votes)
+print("Total votes:", total_votes)
